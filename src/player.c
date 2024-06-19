@@ -537,7 +537,8 @@ void *BarPlayerThread (void *data) {
 						!player->interrupted;
 			} else {
 				/* filter missing or audio device busy */
-				pret = PLAYER_RET_HARDFAIL;
+				pret = PLAYER_RET_SOFTFAIL;
+				printError (player->settings, "Cannot open filter or audio device", 0);
 			}
 		} else {
 			/* stream not found */

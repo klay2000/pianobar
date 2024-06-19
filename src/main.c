@@ -461,7 +461,7 @@ int main (int argc, char **argv) {
 	}
 
 	BarUiMsg (&app.settings, MSG_NONE,
-			"Welcome to " PACKAGE " (" VERSION ")! ");
+			"Welcome to " PACKAGE " (" VERSION ") but better! ");
 	if (app.settings.keys[BAR_KS_HELP] == BAR_KS_DISABLED) {
 		BarUiMsg (&app.settings, MSG_NONE, "\n");
 	} else {
